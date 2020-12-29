@@ -1,38 +1,151 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+
+  height: 70px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.plus,
+.minus,
+.balance {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  color: black;
+  width: 15%;
+  height: 35px;
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin-top: 15px;
 }
+.header h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: black;
+  padding: 6px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  border-radius: 5px;
+  font-weight: 400;
+  font-style: normal;
 }
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-content: space-between;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
+}
+.form-wrapper form {
+  max-width: 1080px;
+  width: 400px;
+}
+form .input-income {
   display: flex;
   flex-direction: column;
+}
+
+form .input-expense {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-expense input,
+.input-income input {
+  text-align: center;
+  margin: 2px;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: row;
+  margin: 10 5px;
+  padding-left: 25px;
+  padding-right: 30px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.transactionIncome,
+.transactionexpense {
+  width: 400px;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 450px;
+  padding: 3px;
+  max-height: 20rem;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.transaction {
+  max-width: 400px;
+  display: flex;
+
+  flex-direction: row;
+  margin-bottom: 16px;
+
+  background-color: black;
   color: white;
+  padding: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.transaction-text {
+  width: 450px;
+  margin-right: 5px;
+  word-break: break-all;
+  padding-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction-amount {
+  width: 300px;
+  margin-right: 20px;
+  word-break: break-all;
+}
+.delete-btn {
+  border: none;
+  outline: none;
+  width: 25%;
+  margin-left: 5px;
+}
+.delete-btn:focus {
+  border: none;
+  outline: none;
+}
+form .btn {
+  width: 20%;
+  margin: auto;
+  margin-top: 4px;
+}
+form input[type="text"] {
+  color: black;
+  border-radius: 5px;
+}
+.input-income input[type="number"] {
+  color: green;
+  border-radius: 5px;
+}
+.input-expense input[type="number"] {
+  color: red;
+  border-radius: 5px;
+}
+.app-wrapper {
+  background-color: rgb(124, 121, 121);
+  width: 100%;
 }
