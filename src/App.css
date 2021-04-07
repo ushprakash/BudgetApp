@@ -10,7 +10,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(70, 70, 226);
+  background-color: black;
 
   height: 50px;
   font-size: 18px;
@@ -20,7 +20,7 @@
 .minus,
 .balance {
   background-color: white;
-  border: 1.5px solid rgb(70, 70, 226);
+  border: 1.5px solid black;
   border-radius: 5px;
   padding: 3px;
   color: black;
@@ -39,7 +39,7 @@
   color: white;
   text-align: center;
   text-transform: uppercase;
-  background-color: rgb(70, 70, 226);
+  background-color: black;
   padding: 6px;
 
   border-radius: 5px;
@@ -112,7 +112,7 @@ form .input-expense {
   display: flex;
   flex-direction: row;
   margin-bottom: 16px;
-  border: 3px solid rgb(70, 70, 226);
+  border: 3px solid black;
   color: black;
   padding: 5px;
   border-radius: 5px;
@@ -129,14 +129,14 @@ form .input-expense {
   margin-right: 20px;
   word-break: break-all;
   padding-left: 10px;
-  border-left: 2px dotted blue;
+  border-left: 2px dotted black;
 }
 .delete-btn {
   border: none;
   outline: none;
   width: 25%;
   margin-left: 5px;
-  color: blue;
+  color: black;
 }
 .delete-btn:focus {
   border: none;
@@ -148,28 +148,28 @@ form .btn {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color: rgb(70, 70, 226);
+  background-color: black;
   color: white;
 }
 form input[type="text"] {
   color: black;
   border-radius: 5px;
-  border: 3px solid rgb(70, 70, 226);
+  border: 3px solid black;
   font-weight: 500;
 }
 .input-income input[type="number"] {
   color: black;
   border-radius: 5px;
-  border: 3px solid rgb(70, 70, 226);
+  border: 3px solid black;
   font-weight: 500;
 }
 .input-expense input[type="number"] {
   color: black;
   border-radius: 5px;
-  border: 3px solid rgb(70, 70, 226);
+  border: 3px solid black;
   font-weight: 500;
 }
 .app-wrapper {
-  background-color: rgb(70, 70, 226);
+  background-color: black;
   width: 100%;
 }
